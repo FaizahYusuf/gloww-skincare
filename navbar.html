@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design System &amp; Navigation Reference | GLOWW</title>
+    <meta name="description" content="Internal reference for the GLOWW design system: shared navigation, colours, typography and components.">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#2c4234">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/content.css">
+    <script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <aside class="announcement" aria-label="Announcement"><p>Complimentary shipping on orders over $50</p></aside>
+
+    <!-- The shared navigation, exactly as used on every page -->
+    <header class="site-header" data-header>
+        <div class="navbar container">
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+                <span class="nav-toggle__bars" aria-hidden="true"></span>
+                <span class="visually-hidden">Open menu</span>
+            </button>
+
+            <a href="index.html" class="logo" aria-label="GLOWW home">GLOWW<span class="logo__sub" aria-hidden="true">Botanical skincare</span></a>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Main">
+                <div class="primary-nav__head">
+                    <span class="logo" aria-hidden="true">GLOWW</span>
+                    <button type="button" class="icon-btn" data-nav-close aria-label="Close menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+                </div>
+                <ul class="primary-nav__list" role="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Product.html">Shop</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="primary-nav__extra">
+                    <h2>Shop by category</h2>
+                    <ul role="list">
+                        <li><a href="Product.html?category=serums">Serums</a></li>
+                        <li><a href="Product.html?category=moisturizers">Moisturizers</a></li>
+                        <li><a href="Product.html?category=eye-care">Eye care</a></li>
+                        <li><a href="Product.html?category=body">Body &amp; sun</a></li>
+                        <li><a href="Product.html?category=sets">Gift sets</a></li>
+                    </ul>
+                    <button type="button" class="text-link primary-nav__wishlist" data-open="wishlist">Your wishlist</button>
+                </div>
+            </nav>
+            <div class="nav-scrim" data-nav-scrim></div>
+
+            <div class="header-actions">
+                <button type="button" class="icon-btn" data-open="search" aria-label="Search"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg></button>
+                <button type="button" class="icon-btn" data-open="wishlist" aria-label="Wishlist"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.4a4.3 4.3 0 0 1 7.5 2.4C19.5 15.4 12 20 12 20Z"/></svg><span class="badge" data-wishlist-count hidden>0</span></button>
+                <button type="button" class="icon-btn" data-open="bag" aria-label="Shopping bag"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="badge" data-bag-count hidden>0</span></button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-hero" aria-labelledby="ds-title">
+            <div class="container">
+                <span class="eyebrow eyebrow--rule">Internal reference · not indexed</span>
+                <h1 id="ds-title">Design system &amp; <em>navigation</em></h1>
+                <p class="lede">The building blocks shared by every page. Styles live in <code>css/base.css</code> (tokens &amp; components) and <code>css/navbar.css</code> (the header above). Resize the window below 1024px to see the mobile menu.</p>
+            </div>
+        </section>
+
+        <div class="container ds">
+            <section class="ds-section" aria-labelledby="ds-nav">
+                <h2 id="ds-nav">Navigation</h2>
+                <ul class="ds-notes" role="list">
+                    <li><strong>Desktop (≥ 1024px):</strong> logo left, five links centred, search / wishlist / bag on the right. The current page is marked with <code>aria-current="page"</code> and a permanent underline.</li>
+                    <li><strong>Mobile &amp; tablet:</strong> hamburger opens an off-canvas panel with a focus trap, Escape-to-close, scrim click-to-close and scroll lock. The page behind becomes inert.</li>
+                    <li><strong>Search:</strong> the magnifier (or the <kbd>/</kbd> key) opens a live product search. Arrow keys move through results.</li>
+                    <li><strong>Bag &amp; wishlist:</strong> drawers built on native <code>&lt;dialog&gt;</code>; counts update instantly across pages and tabs.</li>
+                </ul>
+            </section>
+
+            <section class="ds-section" aria-labelledby="ds-colour">
+                <h2 id="ds-colour">Colour</h2>
+                <ul class="swatches" role="list">
+                    <li><span style="background: var(--color-ivory)"></span>Ivory<code>#fbf8f3</code></li>
+                    <li><span style="background: var(--color-cream)"></span>Cream<code>#f4eee6</code></li>
+                    <li><span style="background: var(--color-beige)"></span>Beige<code>#e6dacb</code></li>
+                    <li><span style="background: var(--color-blush)"></span>Blush<code>#f2e3dc</code></li>
+                    <li><span style="background: var(--color-sage)"></span>Sage<code>#a4b19b</code></li>
+                    <li><span style="background: var(--color-forest)"></span>Forest<code>#2c4234</code></li>
+                    <li><span style="background: var(--color-forest-deep)"></span>Deep forest<code>#1e2d23</code></li>
+                    <li><span style="background: var(--color-gold)"></span>Gold (accents only)<code>#a88a55</code></li>
+                    <li><span style="background: var(--color-charcoal)"></span>Charcoal<code>#232323</code></li>
+                </ul>
+            </section>
+
+            <section class="ds-section" aria-labelledby="ds-type">
+                <h2 id="ds-type">Typography</h2>
+                <p class="eyebrow">Eyebrow label — Jost 500, 0.24em tracking</p>
+                <p class="display-1">Display — Cormorant Garamond</p>
+                <p class="display-2">Section heading with <em>italic accent</em></p>
+                <p class="display-3">Card &amp; sub-section heading</p>
+                <p class="lede">Lede paragraph — Jost 300, generous line height for calm, readable introductions.</p>
+                <p>Body copy — Jost 400 at 16px with a 1.65 line height.</p>
+            </section>
+
+            <section class="ds-section" aria-labelledby="ds-buttons">
+                <h2 id="ds-buttons">Buttons &amp; links</h2>
+                <div class="ds-row">
+                    <button type="button" class="btn btn--primary">Primary</button>
+                    <button type="button" class="btn btn--outline">Outline</button>
+                    <button type="button" class="btn btn--primary is-loading" aria-label="Loading example">Loading</button>
+                    <button type="button" class="btn btn--outline" disabled>Disabled</button>
+                    <a class="text-link" href="Product.html">Text link</a>
+                </div>
+                <div class="ds-row ds-row--dark">
+                    <a class="btn btn--light" href="Product.html">Light button</a>
+                </div>
+                <ul class="chip-list ds-row" role="list">
+                    <li><button type="button" class="chip">Chip</button></li>
+                    <li><button type="button" class="chip" aria-pressed="true">Selected chip</button></li>
+                </ul>
+            </section>
+
+            <section class="ds-section" aria-labelledby="ds-forms">
+                <h2 id="ds-forms">Form fields</h2>
+                <div class="ds-grid">
+                    <div class="field">
+                        <label class="field__label" for="ds-input">Text field</label>
+                        <input class="field__input" id="ds-input" type="text" placeholder="Placeholder">
+                    </div>
+                    <div class="field is-invalid">
+                        <label class="field__label" for="ds-error">Field with error</label>
+                        <input class="field__input" id="ds-error" type="email" value="name@" aria-invalid="true" aria-describedby="ds-error-msg">
+                        <p class="field__error" id="ds-error-msg">Please enter a valid email address, like name@example.com.</p>
+                    </div>
+                    <div class="field">
+                        <span class="field__label" id="ds-qty-label">Quantity selector</span>
+                        <div class="qty" role="group" aria-labelledby="ds-qty-label">
+                            <button type="button" data-qty-step="-1" aria-label="Decrease quantity" disabled>−</button>
+                            <input type="number" value="1" min="1" max="10" aria-label="Quantity" data-qty-input>
+                            <button type="button" data-qty-step="1" aria-label="Increase quantity">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-status form-status--success" role="note"><div><strong>Success state</strong>Shown after a real submission succeeds.</div></div>
+            </section>
+
+            <section class="ds-section" aria-labelledby="ds-cards">
+                <h2 id="ds-cards">Product cards</h2>
+                <p class="ds-notes-text">Rendered from <code>js/products.js</code> — the same markup used in the shop, homepage, search and related products.</p>
+                <div class="product-grid product-grid--4" data-product-list="rose-hydration-serum,hydra-veil-gel-cream,revitalizing-eye-serum,botanical-body-collection"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-bottom">
+            <p>&copy; <span data-year>2026</span> GLOWW — design system reference.</p>
+            <p><a href="index.html">Back to the site</a></p>
+        </div>
+    </footer>
+
+    <script src="js/products.js" defer></script>
+    <script src="js/store.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/drawers.js" defer></script>
+    <script src="js/home.js" defer></script>
+</body>
+
+</html>

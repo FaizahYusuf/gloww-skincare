@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GLOWW — Botanical Skincare Rituals</title>
+    <meta name="description" content="Botanical skincare made for daily ritual. Discover serums, creams and body care with sensorial textures, plant extracts and honest, cosmetic-first care.">
+    <meta name="theme-color" content="#2c4234">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GLOWW">
+    <meta property="og:title" content="GLOWW — Botanical Skincare Rituals">
+    <meta property="og:description" content="Serums, creams and body care with sensorial textures and plant extracts, made for daily ritual.">
+    <meta property="og:image" content="og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <aside class="announcement" aria-label="Announcement"><p>Complimentary shipping on orders over $50</p></aside>
+
+    <header class="site-header" data-header>
+        <div class="navbar container">
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+                <span class="nav-toggle__bars" aria-hidden="true"></span>
+                <span class="visually-hidden">Open menu</span>
+            </button>
+
+            <a href="index.html" class="logo" aria-label="GLOWW home">GLOWW<span class="logo__sub" aria-hidden="true">Botanical skincare</span></a>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Main">
+                <div class="primary-nav__head">
+                    <span class="logo" aria-hidden="true">GLOWW</span>
+                    <button type="button" class="icon-btn" data-nav-close aria-label="Close menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+                </div>
+                <ul class="primary-nav__list" role="list">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="Product.html">Shop</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="primary-nav__extra">
+                    <h2>Shop by category</h2>
+                    <ul role="list">
+                        <li><a href="Product.html?category=serums">Serums</a></li>
+                        <li><a href="Product.html?category=moisturizers">Moisturizers</a></li>
+                        <li><a href="Product.html?category=eye-care">Eye care</a></li>
+                        <li><a href="Product.html?category=body">Body &amp; sun</a></li>
+                        <li><a href="Product.html?category=sets">Gift sets</a></li>
+                    </ul>
+                    <button type="button" class="text-link primary-nav__wishlist" data-open="wishlist">Your wishlist</button>
+                </div>
+            </nav>
+            <div class="nav-scrim" data-nav-scrim></div>
+
+            <div class="header-actions">
+                <button type="button" class="icon-btn" data-open="search" aria-label="Search"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg></button>
+                <button type="button" class="icon-btn" data-open="wishlist" aria-label="Wishlist"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.4a4.3 4.3 0 0 1 7.5 2.4C19.5 15.4 12 20 12 20Z"/></svg><span class="badge" data-wishlist-count hidden>0</span></button>
+                <button type="button" class="icon-btn" data-open="bag" aria-label="Shopping bag"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="badge" data-bag-count hidden>0</span></button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- ============ HERO ============ -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__content">
+                <span class="eyebrow eyebrow--rule">Botanical skincare</span>
+                <h1 class="hero__title" id="hero-title">Rituals for skin that feels <em>cared&nbsp;for</em></h1>
+                <p class="lede">Sensorial formulas built around plant extracts and trusted hydrators — made to turn a few quiet minutes each day into the part you look forward to.</p>
+                <div class="hero__actions">
+                    <a class="btn btn--primary" href="Product.html">Shop the collection</a>
+                    <a class="text-link" href="#rituals">Find your ritual
+                        <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                </div>
+            </div>
+
+            <div class="hero__media slideshow-container" data-slideshow aria-roledescription="carousel" aria-label="Featured imagery">
+                <div class="hero__slides">
+                    <figure class="slide is-active" aria-roledescription="slide" aria-label="1 of 3">
+                        <img src="Images/web/sk1.webp" srcset="Images/web/sk1-480.webp 480w, Images/web/sk1-960.webp 960w, Images/web/sk1.webp 1600w" sizes="(min-width: 900px) 58vw, 100vw" width="1600" height="640" alt="A woman with glowing skin holding out an open hand against a soft peach backdrop" fetchpriority="high" class="slide__img slide__img--left">
+                    </figure>
+                    <figure class="slide" aria-roledescription="slide" aria-label="2 of 3">
+                        <img src="Images/web/pin3.webp" srcset="Images/web/pin3-480.webp 480w, Images/web/pin3.webp 880w" sizes="(min-width: 900px) 58vw, 100vw" width="880" height="586" alt="A flat lay of skincare bottles, cotton pads and petals on a blush pink surface" loading="lazy" class="slide__img slide__img--left">
+                    </figure>
+                    <figure class="slide" aria-roledescription="slide" aria-label="3 of 3">
+                        <img src="Images/scenes/gloww-collection.webp" srcset="Images/scenes/gloww-collection-480.webp 480w, Images/scenes/gloww-collection-960.webp 960w, Images/scenes/gloww-collection.webp 1600w" width="1600" height="1400" alt="The GLOWW ritual line-up: Hydra-Veil Gel Cream, Gentle Foaming Cleanser, Rose Hydration Serum and Dual Botanical Serum" sizes="(min-width: 900px) 58vw, 100vw" loading="lazy" class="slide__img">
+                    </figure>
+                </div>
+
+                <div class="slideshow-controls" data-slideshow-controls hidden>
+                    <button type="button" class="slideshow-btn" data-slide-prev aria-label="Previous slide"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 6l-6 6 6 6"/></svg></button>
+                    <div class="slideshow-dots" role="group" aria-label="Choose slide">
+                        <button type="button" class="dot" aria-label="Show slide 1" aria-current="true"></button>
+                        <button type="button" class="dot" aria-label="Show slide 2"></button>
+                        <button type="button" class="dot" aria-label="Show slide 3"></button>
+                    </div>
+                    <button type="button" class="slideshow-btn" data-slide-next aria-label="Next slide"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6"/></svg></button>
+                    <button type="button" class="slideshow-btn" data-slide-pause aria-label="Pause slideshow">
+                        <svg class="icon icon--sm" data-icon-pause viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 6v12M15 6v12"/></svg>
+                        <svg class="icon icon--sm" data-icon-play viewBox="0 0 24 24" aria-hidden="true" focusable="false" hidden><path d="M8 5.5v13l10-6.5-10-6.5Z"/></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SERVICE STRIP ============ -->
+        <section class="service-strip" aria-label="Our promises">
+            <ul class="container" role="list">
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19C5 10 11 5 20 4c0 9-5 15-14 15"/><path d="M5 19c3-4 6-7 10-9"/></svg>
+                    <span><strong>Botanical at heart</strong>Plant extracts in every formula</span>
+                </li>
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.5"/><circle cx="17" cy="17.5" r="1.5"/></svg>
+                    <span><strong>Complimentary shipping</strong>On orders over $50</span>
+                </li>
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 10h16v10H4zM3 7h18v3H3zM12 7v13"/><path d="M12 7c-1.5-3-5-3-5-1s3 1 5 1c2 0 5 1 5-1s-3.5-2-5 1Z"/></svg>
+                    <span><strong>Gift-ready sets</strong>Thoughtful pairings for every ritual</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ============ BRAND STORY ============ -->
+        <section class="section story" aria-labelledby="story-title">
+            <div class="container story__inner">
+                <div class="story__media reveal-image">
+                    <img src="Images/web/image1.webp" srcset="Images/web/image1-480.webp 480w, Images/web/image1-960.webp 960w, Images/web/image1.webp 1080w" sizes="(min-width: 900px) 55vw, 100vw" width="1080" height="607" alt="A woman smoothing a dab of cream onto her cheek beside a white orchid" loading="lazy">
+                </div>
+                <div class="story__content reveal">
+                    <span class="eyebrow eyebrow--rule">Our philosophy</span>
+                    <h2 class="display-2" id="story-title">Beauty, slowly. <em>Skincare as a daily ritual.</em></h2>
+                    <p>We believe the few minutes you spend caring for your skin can be the most restorative of the day. So every formula begins with how it feels — the cool slip of a gel, an oil warmed between your palms, a scent that makes you pause.</p>
+                    <p>We pair botanical extracts with well-understood skincare ingredients, describe them plainly, and leave out the noise. What remains is a small, considered wardrobe of products designed to work beautifully together.</p>
+                    <ul class="story__principles" role="list">
+                        <li><span>01</span>Texture first</li>
+                        <li><span>02</span>Botanical at heart</li>
+                        <li><span>03</span>Honest by design</li>
+                    </ul>
+                    <a class="text-link" href="about.html">Read our story
+                        <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ INNOVATIVE FORMULATIONS (original section, refined) ============ -->
+        <section class="innovation" aria-labelledby="innovation-title">
+            <div class="innovation-image reveal-image">
+                <img src="Images/scenes/gloww-serums.webp" srcset="Images/scenes/gloww-serums-480.webp 480w, Images/scenes/gloww-serums-960.webp 960w, Images/scenes/gloww-serums.webp 1200w" width="1200" height="1500" alt="The GLOWW serum family: Dual Botanical Serum, Revitalizing Eye Serum and Rose Hydration Serum" sizes="(min-width: 900px) 50vw, 100vw" loading="lazy">
+            </div>
+
+            <div class="innovation-content reveal">
+                <span class="eyebrow eyebrow--rule">The GLOWW approach</span>
+                <h2 id="innovation-title">Innovative <em>formulations</em></h2>
+                <p>Every formula is developed around one question: how should this feel on skin? We balance plant extracts with proven hydrators, then refine each texture until it melts in effortlessly — so the ritual is as enjoyable as the result.</p>
+
+                <ol class="innovation-points" role="list">
+                    <li>
+                        <span class="innovation-points__num">01</span>
+                        <div>
+                            <h3>Botanical extracts</h3>
+                            <p>Chosen for how they feel and what they bring to a texture — from turmeric root to oat and rose.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="innovation-points__num">02</span>
+                        <div>
+                            <h3>Modern hydrators</h3>
+                            <p>Hyaluronic acid, glycerin and squalane help skin feel supple, soft and comfortable.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="innovation-points__num">03</span>
+                        <div>
+                            <h3>Sensorial textures</h3>
+                            <p>Gels, milks, oils and creams designed to layer seamlessly, morning and night.</p>
+                        </div>
+                    </li>
+                </ol>
+
+                <a href="Product.html?category=serums" class="btn btn--outline">Discover the serums</a>
+            </div>
+        </section>
+
+        <!-- ============ BESTSELLERS (original section, now shoppable) ============ -->
+        <section class="section bestsellers" aria-labelledby="bestsellers-title">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">Shop our favorites</span>
+                    <h2 id="bestsellers-title">Our bestsellers</h2>
+                    <p>Signature formulas to begin with — each one a quiet essential in a well-loved routine.</p>
+                </div>
+
+                <div class="product-showcase">
+                    <article class="showcase-card reveal">
+                        <div class="product-image">
+                            <img src="Images/products/rose-hydration-serum.webp" srcset="Images/products/rose-hydration-serum-480.webp 480w, Images/products/rose-hydration-serum.webp 1000w" width="1000" height="1250" alt="GLOWW Rose Hydration Serum in a blush-pink glass dropper bottle with a gold collar" sizes="(min-width: 900px) 50vw, 100vw" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Serums · 30 ml</span>
+                            <h3>Rose Hydration Serum</h3>
+                            <p>A water-light serum of rose water, humectants and plant glycerin. It sinks in within seconds and leaves skin feeling plump, supple and quietly radiant, morning to night.</p>
+                            <p class="product-info__price price">$52</p>
+                            <div class="product-info__actions">
+                                <button type="button" class="btn btn--primary" data-add-to-bag="rose-hydration-serum">Add to bag</button>
+                                <a class="text-link" href="product-detail.html?p=rose-hydration-serum">Discover product <span class="visually-hidden">Rose Hydration Serum</span>
+                                    <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="showcase-card reverse reveal">
+                        <div class="product-image">
+                            <img src="Images/products/revitalizing-eye-serum.webp" srcset="Images/products/revitalizing-eye-serum-480.webp 480w, Images/products/revitalizing-eye-serum.webp 1000w" width="1000" height="1250" alt="GLOWW Revitalizing Eye Serum, a slim terracotta pen with a gold cooling applicator tip" sizes="(min-width: 900px) 50vw, 100vw" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Eye care · 15 ml</span>
+                            <h3>Revitalizing Eye Serum</h3>
+                            <p>A cooling gel-serum for the delicate eye contour. Caffeine and cornflower water make for a refreshing morning ritual that helps the eye area look brighter and more rested.</p>
+                            <p class="product-info__price price">$46</p>
+                            <div class="product-info__actions">
+                                <button type="button" class="btn btn--primary" data-add-to-bag="revitalizing-eye-serum">Add to bag</button>
+                                <a class="text-link" href="product-detail.html?p=revitalizing-eye-serum">Discover product <span class="visually-hidden">Revitalizing Eye Serum</span>
+                                    <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="bestsellers__more">
+                    <div class="section-heading section-heading--split">
+                        <div>
+                            <span class="eyebrow">Complete the ritual</span>
+                            <h2 class="display-3">More signature formulas</h2>
+                        </div>
+                        <a class="text-link" href="Product.html">Shop all products
+                            <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+                    </div>
+                    <div class="product-grid product-grid--4" data-product-list="hydra-veil-gel-cream,dual-botanical-serum,velvet-firming-day-cream,midnight-renewal-night-cream" aria-live="polite">
+                        <noscript><p>Please enable JavaScript to browse products, or visit the <a href="Product.html">shop</a>.</p></noscript>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SKIN BENEFITS ============ -->
+        <section class="section section--cream benefits" aria-labelledby="benefits-title">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">Shop by skin need</span>
+                    <h2 id="benefits-title">What would your skin <em>love</em> today?</h2>
+                    <p>Five simple ways into the collection. Choose the feeling you're after and we'll show you the formulas made for it.</p>
+                </div>
+
+                <ul class="benefit-grid" role="list">
+                    <li class="benefit-card reveal">
+                        <svg class="benefit-card__icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 6c6 8 12 15 12 22a12 12 0 0 1-24 0c0-7 6-14 12-22Z"/><path d="M18 30a6 6 0 0 0 6 6"/></svg>
+                        <h3>Hydration</h3>
+                        <p>Light, layerable formulas that help skin feel quenched and supple.</p>
+                        <a class="text-link" href="Product.html?benefit=hydration">Shop hydration <span class="visually-hidden">products</span></a>
+                    </li>
+                    <li class="benefit-card reveal" style="--reveal-delay: 0.08s">
+                        <svg class="benefit-card__icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="8"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6M11.3 11.3l4.2 4.2M32.5 32.5l4.2 4.2M11.3 36.7l4.2-4.2M32.5 15.5l4.2-4.2"/></svg>
+                        <h3>Radiance</h3>
+                        <p>Textures and extracts chosen to help a tired complexion look luminous.</p>
+                        <a class="text-link" href="Product.html?benefit=radiance">Shop radiance <span class="visually-hidden">products</span></a>
+                    </li>
+                    <li class="benefit-card reveal" style="--reveal-delay: 0.16s">
+                        <svg class="benefit-card__icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M10 38C10 20 22 10 40 8c0 18-10 30-28 30"/><path d="M10 38c6-8 12-14 20-18"/></svg>
+                        <h3>Nourishment</h3>
+                        <p>Rich creams and oils that leave dry-feeling skin soft and comforted.</p>
+                        <a class="text-link" href="Product.html?benefit=nourishment">Shop nourishment <span class="visually-hidden">products</span></a>
+                    </li>
+                    <li class="benefit-card reveal" style="--reveal-delay: 0.24s">
+                        <svg class="benefit-card__icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 40s-15-9.2-15-20.4A8.6 8.6 0 0 1 24 14.8a8.6 8.6 0 0 1 15 4.8C39 30.8 24 40 24 40Z"/></svg>
+                        <h3>Comfort</h3>
+                        <p>Gentle formulas for skin that prefers simplicity and calm.</p>
+                        <a class="text-link" href="Product.html?benefit=comfort">Shop comfort <span class="visually-hidden">products</span></a>
+                    </li>
+                    <li class="benefit-card reveal" style="--reveal-delay: 0.32s">
+                        <svg class="benefit-card__icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M24 40V10M14 20l10-10 10 10M14 32l10-10 10 10"/></svg>
+                        <h3>Firming look</h3>
+                        <p>Sculpting creams and serums that help skin look firmer and more defined.</p>
+                        <a class="text-link" href="Product.html?benefit=firming">Shop firming <span class="visually-hidden">products</span></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============ DAILY RITUALS (editorial) ============ -->
+        <section class="section rituals" id="rituals" aria-labelledby="rituals-title">
+            <div class="container">
+                <div class="section-heading section-heading--split reveal">
+                    <div>
+                        <span class="eyebrow eyebrow--rule">The daily edit</span>
+                        <h2 class="display-2" id="rituals-title">Two rituals, <em>morning &amp; night</em></h2>
+                    </div>
+                    <p class="lede">A few deliberate steps, in the right order. Begin with these — then make them your own.</p>
+                </div>
+
+                <div class="ritual-grid">
+                    <article class="ritual reveal">
+                        <div class="ritual__media">
+                            <img src="Images/web/pin2.webp" srcset="Images/web/pin2-480.webp 480w, Images/web/pin2.webp 626w" sizes="(min-width: 900px) 45vw, 100vw" width="626" height="417" alt="A soft white towel, a spray bottle and a magnolia flower on blush pink" loading="lazy">
+                        </div>
+                        <div class="ritual__body">
+                            <span class="eyebrow">Morning ritual · 4 steps</span>
+                            <h3>Wake, refresh &amp; glow</h3>
+                            <ol class="ritual__steps" role="list">
+                                <li><span>Cleanse</span><a href="product-detail.html?p=gentle-foaming-cleanser">Gentle Foaming Cleanser</a></li>
+                                <li><span>Hydrate</span><a href="product-detail.html?p=rose-hydration-serum">Rose Hydration Serum</a></li>
+                                <li><span>Refresh</span><a href="product-detail.html?p=revitalizing-eye-serum">Revitalizing Eye Serum</a></li>
+                                <li><span>Moisturize</span><a href="product-detail.html?p=hydra-veil-gel-cream">Hydra-Veil Gel Cream</a></li>
+                            </ol>
+                            <div class="ritual__actions">
+                                <button type="button" class="btn btn--primary" data-add-ritual="morning">Add the ritual <span class="ritual__total" data-ritual-total="morning"></span></button>
+                                <a class="text-link" href="journal.html#morning-ritual">Read the guide</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="ritual reveal" style="--reveal-delay: 0.12s">
+                        <div class="ritual__media">
+                            <img src="Images/web/pin1.webp" srcset="Images/web/pin1-480.webp 480w, Images/web/pin1.webp 736w" sizes="(min-width: 900px) 45vw, 100vw" width="736" height="414" alt="A smiling woman wearing a cream face mask and a pink hair towel" loading="lazy">
+                        </div>
+                        <div class="ritual__body">
+                            <span class="eyebrow">Evening ritual · 3 steps</span>
+                            <h3>Unwind, restore &amp; rest</h3>
+                            <ol class="ritual__steps" role="list">
+                                <li><span>Cleanse</span><a href="product-detail.html?p=gentle-foaming-cleanser">Gentle Foaming Cleanser</a></li>
+                                <li><span>Treat</span><a href="product-detail.html?p=dual-botanical-serum">Dual Botanical Serum</a></li>
+                                <li><span>Nourish</span><a href="product-detail.html?p=midnight-renewal-night-cream">Midnight Renewal Night Cream</a></li>
+                            </ol>
+                            <div class="ritual__actions">
+                                <button type="button" class="btn btn--primary" data-add-ritual="evening">Add the ritual <span class="ritual__total" data-ritual-total="evening"></span></button>
+                                <a class="text-link" href="journal.html#evening-ritual">Read the guide</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ TESTIMONIALS (original section, clearly labelled) ============ -->
+        <section class="section section--blush testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">Illustrative reviews</span>
+                    <h2 id="testimonials-title">Notes on the ritual</h2>
+                    <p>Sample reviews shown for demonstration while our verified review programme is being built.</p>
+                </div>
+
+                                    <div class="testimonial-list testimonial-list--row">
+                        <figure class="testimonial-card reveal">
+                            <div class="rating" role="img" aria-label="Rated 5 out of 5">
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg>
+                            </div>
+                            <blockquote>
+                                <h3>Truly effective</h3>
+                                <p>“The eye serum has become the first thing I reach for. The cool tip wakes me up, and my under-eyes look so much fresher by the time I've had coffee.”</p>
+                            </blockquote>
+                            <figcaption class="customer-name">Sample review · Revitalizing Eye Serum</figcaption>
+                        </figure>
+
+                        <figure class="testimonial-card reveal" style="--reveal-delay: 0.1s">
+                            <div class="rating" role="img" aria-label="Rated 5 out of 5">
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg>
+                            </div>
+                            <blockquote>
+                                <h3>A game changer</h3>
+                                <p>“I've used the rose serum every morning for a month. It absorbs instantly, sits beautifully under makeup, and my skin just feels comfortable all day.”</p>
+                            </blockquote>
+                            <figcaption class="customer-name">Sample review · Rose Hydration Serum</figcaption>
+                        </figure>
+
+                        <figure class="testimonial-card reveal" style="--reveal-delay: 0.2s">
+                            <div class="rating" role="img" aria-label="Rated 4 out of 5">
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg><svg class="icon rating__empty" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></svg>
+                            </div>
+                            <blockquote>
+                                <h3>My evening wind-down</h3>
+                                <p>“The night cream feels rich without being heavy. Pressing it in has become my cue to switch off — I wake up with skin that feels soft and rested.”</p>
+                            </blockquote>
+                            <figcaption class="customer-name">Sample review · Midnight Renewal Night Cream</figcaption>
+                        </figure>
+                    </div>
+                            </div>
+        </section>
+
+        <!-- ============ NEWSLETTER ============ -->
+        <section class="section section--forest newsletter" aria-labelledby="newsletter-title">
+            <div class="container newsletter__inner">
+                <div class="reveal">
+                    <span class="eyebrow eyebrow--rule">The journal, delivered</span>
+                    <h2 id="newsletter-title">Letters on skin, <em>season &amp; ritual</em></h2>
+                    <p>Occasional notes on new formulas, seasonal routines and ingredient stories. Never noisy — and you can leave whenever you like.</p>
+                </div>
+
+                <form class="newsletter-form reveal" data-form="newsletter" data-endpoint="/api/newsletter-subscribe" novalidate>
+                    <div class="field">
+                        <label class="field__label" for="newsletter-email">Email address</label>
+                        <div class="newsletter-form__row">
+                            <input class="field__input" id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="newsletter-email-error newsletter-note">
+                            <button type="submit" class="btn">Subscribe</button>
+                        </div>
+                        <p class="field__error" id="newsletter-email-error"></p>
+                    </div>
+                    <!-- Honeypot: hidden from people, tempting to bots -->
+                    <div class="visually-hidden" aria-hidden="true">
+                        <label for="newsletter-company">Company</label>
+                        <input id="newsletter-company" name="company" type="text" tabindex="-1" autocomplete="off" data-honeypot>
+                    </div>
+                    <p class="newsletter__note" id="newsletter-note">We'll send a confirmation email first, and only use your address for the newsletter. Our mailing list is managed with Mailchimp.</p>
+                    <div data-form-status></div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">GLOWW<span class="logo__sub">Botanical skincare</span></a>
+                <p>Botanical skincare made for the quiet moments that are yours alone. Considered formulas, honest words, beautiful rituals.</p>
+            </div>
+            <nav class="footer-column" aria-labelledby="footer-shop">
+                <h2 id="footer-shop">Shop</h2>
+                <ul role="list">
+                    <li><a href="Product.html">All products</a></li>
+                    <li><a href="Product.html?category=serums">Serums</a></li>
+                    <li><a href="Product.html?category=moisturizers">Moisturizers</a></li>
+                    <li><a href="Product.html?category=body">Body &amp; sun</a></li>
+                    <li><a href="Product.html?category=sets">Gift sets</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-column" aria-labelledby="footer-explore">
+                <h2 id="footer-explore">Explore</h2>
+                <ul role="list">
+                    <li><a href="about.html">Our story</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="index.html#rituals">Daily rituals</a></li>
+                    <li><a href="Product.html?benefit=hydration">Shop by skin need</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-column" aria-labelledby="footer-care">
+                <h2 id="footer-care">Customer care</h2>
+                <ul role="list">
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="contact.html#faq">FAQ</a></li>
+                    <li><a href="contact.html#shipping">Shipping &amp; returns</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span data-year>2026</span> GLOWW. All rights reserved.</p>
+            <p>Prices in USD · Secure checkout by Stripe</p>
+        </div>
+    </footer>
+
+    <script src="js/products.js" defer></script>
+    <script src="js/store.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/drawers.js" defer></script>
+    <script src="js/slideshow.js" defer></script>
+    <script src="js/forms.js" defer></script>
+    <script src="js/home.js" defer></script>
+</body>
+
+</html>

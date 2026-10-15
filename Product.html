@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop Skincare — Serums, Creams &amp; Body Care | GLOWW</title>
+    <meta name="description" content="Shop the GLOWW collection: cleansers, serums, moisturizers, eye care, body care and gift sets. Filter by skin need, search by ingredient and save favourites.">
+    <meta name="theme-color" content="#2c4234">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GLOWW">
+    <meta property="og:title" content="Shop the collection | GLOWW">
+    <meta property="og:description" content="Cleansers, serums, moisturizers, eye care, body care and gift sets with sensorial textures and plant extracts.">
+    <meta property="og:image" content="og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/products.css">
+    <script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <aside class="announcement" aria-label="Announcement"><p>Complimentary shipping on orders over $50</p></aside>
+
+    <header class="site-header" data-header>
+        <div class="navbar container">
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+                <span class="nav-toggle__bars" aria-hidden="true"></span>
+                <span class="visually-hidden">Open menu</span>
+            </button>
+
+            <a href="index.html" class="logo" aria-label="GLOWW home">GLOWW<span class="logo__sub" aria-hidden="true">Botanical skincare</span></a>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Main">
+                <div class="primary-nav__head">
+                    <span class="logo" aria-hidden="true">GLOWW</span>
+                    <button type="button" class="icon-btn" data-nav-close aria-label="Close menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+                </div>
+                <ul class="primary-nav__list" role="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Product.html" aria-current="page">Shop</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="primary-nav__extra">
+                    <h2>Shop by category</h2>
+                    <ul role="list">
+                        <li><a href="Product.html?category=serums">Serums</a></li>
+                        <li><a href="Product.html?category=moisturizers">Moisturizers</a></li>
+                        <li><a href="Product.html?category=eye-care">Eye care</a></li>
+                        <li><a href="Product.html?category=body">Body &amp; sun</a></li>
+                        <li><a href="Product.html?category=sets">Gift sets</a></li>
+                    </ul>
+                    <button type="button" class="text-link primary-nav__wishlist" data-open="wishlist">Your wishlist</button>
+                </div>
+            </nav>
+            <div class="nav-scrim" data-nav-scrim></div>
+
+            <div class="header-actions">
+                <button type="button" class="icon-btn" data-open="search" aria-label="Search"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg></button>
+                <button type="button" class="icon-btn" data-open="wishlist" aria-label="Wishlist"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.4a4.3 4.3 0 0 1 7.5 2.4C19.5 15.4 12 20 12 20Z"/></svg><span class="badge" data-wishlist-count hidden>0</span></button>
+                <button type="button" class="icon-btn" data-open="bag" aria-label="Shopping bag"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="badge" data-bag-count hidden>0</span></button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- ============ PAGE HERO ============ -->
+        <section class="page-hero shop-hero" aria-labelledby="shop-title">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><span aria-current="page">Shop</span></li>
+                    </ol>
+                </nav>
+                <div class="shop-hero__grid">
+                    <div>
+                        <span class="eyebrow eyebrow--rule">Your skin. Our expertise.</span>
+                        <h1 id="shop-title">The <em>collection</em></h1>
+                    </div>
+                    <p class="lede">Plant-powered formulas for face and body — each one designed to layer beautifully with the next. Browse by collection, filter by what your skin needs, or search for a favourite ingredient.</p>
+                </div>
+
+                <!-- Collection tiles: the original Product.html categories and imagery -->
+                <ul class="collection-tiles" role="list" aria-label="Shop by collection">
+                    <li>
+                        <a class="collection-tile" href="Product.html?category=face#shop">
+                            <span class="collection-tile__media"><img src="Images/products/dual-botanical-serum-480.webp" width="480" height="600" alt="" loading="lazy"></span>
+                            <span class="collection-tile__label">Face</span>
+                            <span class="collection-tile__cta">Shop now</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="collection-tile" href="Product.html?category=makeup#shop">
+                            <span class="collection-tile__media"><img src="Images/products/hydrating-lip-colour-480.webp" width="480" height="600" alt="" loading="lazy"></span>
+                            <span class="collection-tile__label">Makeup</span>
+                            <span class="collection-tile__cta">Shop now</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="collection-tile" href="Product.html?category=body#shop">
+                            <span class="collection-tile__media"><img src="Images/products/botanical-body-collection-480.webp" width="480" height="600" alt="" loading="lazy"></span>
+                            <span class="collection-tile__label">Body</span>
+                            <span class="collection-tile__cta">Shop now</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="collection-tile" href="Product.html?category=men#shop">
+                            <span class="collection-tile__media"><img src="Images/products/smooth-shave-gel-480.webp" width="480" height="600" alt="" loading="lazy"></span>
+                            <span class="collection-tile__label">Men</span>
+                            <span class="collection-tile__cta">Shop now</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="collection-tile" href="Product.html?benefit=firming#shop">
+                            <span class="collection-tile__media"><img src="Images/products/velvet-firming-day-cream-480.webp" width="480" height="600" alt="" loading="lazy"></span>
+                            <span class="collection-tile__label">Firming &amp; renewal</span>
+                            <span class="collection-tile__cta">Shop now</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============ SERVICE STRIP (from the original perks bar) ============ -->
+        <section class="service-strip" aria-label="Our promises">
+            <ul class="container" role="list">
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.5"/><circle cx="17" cy="17.5" r="1.5"/></svg>
+                    <span><strong>Complimentary shipping</strong>On orders over $50</span>
+                </li>
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.4a4.3 4.3 0 0 1 7.5 2.4C19.5 15.4 12 20 12 20Z"/></svg>
+                    <span><strong>Save your favourites</strong>Your wishlist stays on this device</span>
+                </li>
+                <li>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19C5 10 11 5 20 4c0 9-5 15-14 15"/><path d="M5 19c3-4 6-7 10-9"/></svg>
+                    <span><strong>Ritual guidance</strong><a href="index.html#rituals">Morning &amp; evening routines</a></span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ============ CATALOG ============ -->
+        <section class="section shop" id="shop" aria-labelledby="catalog-title">
+            <div class="container">
+                <h2 class="visually-hidden" id="catalog-title">All products</h2>
+
+                <div class="shop-toolbar">
+                    <div class="shop-search">
+                        <label class="visually-hidden" for="shop-search">Search products</label>
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+                        <input id="shop-search" type="search" placeholder="Search by product, ingredient or need" autocomplete="off" data-shop-search>
+                        <button type="button" class="link-btn" data-shop-search-clear hidden>Clear</button>
+                    </div>
+
+                    <div class="shop-toolbar__controls">
+                        <button type="button" class="btn btn--outline btn--sm filter-toggle" aria-expanded="false" aria-controls="shop-filters" data-filter-toggle>
+                            <svg class="icon icon--sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>
+                            Filters <span data-filter-count></span>
+                        </button>
+                        <div class="shop-sort">
+                            <label for="shop-sort">Sort by</label>
+                            <select id="shop-sort" class="field__input" data-shop-sort>
+                                <option value="featured">Featured</option>
+                                <option value="price-asc">Price: low to high</option>
+                                <option value="price-desc">Price: high to low</option>
+                                <option value="name">Name: A–Z</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-layout">
+                    <div class="shop-filters" id="shop-filters" role="region" aria-label="Product filters" data-shop-filters>
+                        <fieldset class="filter-group">
+                            <legend>Category</legend>
+                            <div class="filter-options" data-filter="category"></div>
+                        </fieldset>
+                        <fieldset class="filter-group">
+                            <legend>Skin need</legend>
+                            <div class="filter-options" data-filter="benefit"></div>
+                        </fieldset>
+                        <fieldset class="filter-group">
+                            <legend>Price</legend>
+                            <div class="filter-options" data-filter="price"></div>
+                        </fieldset>
+                        <button type="button" class="btn btn--outline btn--sm btn--block" data-clear-filters>Clear all filters</button>
+                    </div>
+
+                    <div class="shop-results">
+                        <div class="shop-results__bar">
+                            <p class="shop-results__count" role="status" aria-live="polite" data-result-count>Loading products…</p>
+                            <ul class="active-filters" role="list" data-active-filters></ul>
+                        </div>
+
+                        <div class="product-grid" data-product-grid aria-busy="true">
+                            <div class="skeleton-card" aria-hidden="true"><div class="skeleton skeleton--media"></div><div class="skeleton skeleton--line"></div><div class="skeleton skeleton--line"></div></div>
+                            <div class="skeleton-card" aria-hidden="true"><div class="skeleton skeleton--media"></div><div class="skeleton skeleton--line"></div><div class="skeleton skeleton--line"></div></div>
+                            <div class="skeleton-card" aria-hidden="true"><div class="skeleton skeleton--media"></div><div class="skeleton skeleton--line"></div><div class="skeleton skeleton--line"></div></div>
+                            <noscript><p class="shop-noscript">Our shop uses JavaScript for browsing, filtering and the shopping bag. Please enable it to explore the collection.</p></noscript>
+                        </div>
+
+                        <div class="empty-state shop-empty" data-shop-empty hidden>
+                            <span class="empty-state__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg></span>
+                            <h3>No products match your selection</h3>
+                            <p>Try a different search term or remove a filter — or start fresh with the whole collection.</p>
+                            <button type="button" class="btn btn--primary" data-clear-filters>Clear all filters</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ BRAND STATEMENT (replaces the old "70 years" banner) ============ -->
+        <section class="section section--forest statement" aria-labelledby="statement-title">
+            <div class="container--narrow statement__inner reveal">
+                <span class="eyebrow">Our commitment</span>
+                <h2 id="statement-title">Fewer, better formulas — made to be <em>layered, loved and finished.</em></h2>
+                <p>We'd rather you own five products you adore than fifteen you forget. Every formula in the collection is designed to work beautifully alone and even better together.</p>
+                <a class="btn btn--light" href="about.html">Discover our approach</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">GLOWW<span class="logo__sub">Botanical skincare</span></a>
+                <p>Botanical skincare made for the quiet moments that are yours alone. Considered formulas, honest words, beautiful rituals.</p>
+            </div>
+            <nav class="footer-column" aria-labelledby="footer-shop">
+                <h2 id="footer-shop">Shop</h2>
+                <ul role="list">
+                    <li><a href="Product.html">All products</a></li>
+                    <li><a href="Product.html?category=serums">Serums</a></li>
+                    <li><a href="Product.html?category=moisturizers">Moisturizers</a></li>
+                    <li><a href="Product.html?category=body">Body &amp; sun</a></li>
+                    <li><a href="Product.html?category=sets">Gift sets</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-column" aria-labelledby="footer-explore">
+                <h2 id="footer-explore">Explore</h2>
+                <ul role="list">
+                    <li><a href="about.html">Our story</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="index.html#rituals">Daily rituals</a></li>
+                    <li><a href="Product.html?benefit=hydration">Shop by skin need</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-column" aria-labelledby="footer-care">
+                <h2 id="footer-care">Customer care</h2>
+                <ul role="list">
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="contact.html#faq">FAQ</a></li>
+                    <li><a href="contact.html#shipping">Shipping &amp; returns</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span data-year>2026</span> GLOWW. All rights reserved.</p>
+            <p>Prices in USD · Secure checkout by Stripe</p>
+        </div>
+    </footer>
+
+    <script src="js/products.js" defer></script>
+    <script src="js/store.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/drawers.js" defer></script>
+    <script src="js/shop.js" defer></script>
+</body>
+
+</html>

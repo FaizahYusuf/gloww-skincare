@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us &amp; FAQ | GLOWW</title>
+    <meta name="description" content="Questions about a product, your routine or shipping? Write to the GLOWW team, or find quick answers in our FAQ.">
+    <meta name="theme-color" content="#2c4234">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GLOWW">
+    <meta property="og:title" content="Contact us | GLOWW">
+    <meta property="og:description" content="Questions about a product, your routine or shipping? We'd love to hear from you.">
+    <meta property="og:image" content="og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/content.css">
+    <script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <aside class="announcement" aria-label="Announcement"><p>Complimentary shipping on orders over $50</p></aside>
+
+    <header class="site-header" data-header>
+        <div class="navbar container">
+            <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+                <span class="nav-toggle__bars" aria-hidden="true"></span>
+                <span class="visually-hidden">Open menu</span>
+            </button>
+
+            <a href="index.html" class="logo" aria-label="GLOWW home">GLOWW<span class="logo__sub" aria-hidden="true">Botanical skincare</span></a>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Main">
+                <div class="primary-nav__head">
+                    <span class="logo" aria-hidden="true">GLOWW</span>
+                    <button type="button" class="icon-btn" data-nav-close aria-label="Close menu"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+                </div>
+                <ul class="primary-nav__list" role="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Product.html">Shop</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+                <div class="primary-nav__extra">
+                    <h2>Shop by category</h2>
+                    <ul role="list">
+                        <li><a href="Product.html?category=serums">Serums</a></li>
+                        <li><a href="Product.html?category=moisturizers">Moisturizers</a></li>
+                        <li><a href="Product.html?category=eye-care">Eye care</a></li>
+                        <li><a href="Product.html?category=body">Body &amp; sun</a></li>
+                        <li><a href="Product.html?category=sets">Gift sets</a></li>
+                    </ul>
+                    <button type="button" class="text-link primary-nav__wishlist" data-open="wishlist">Your wishlist</button>
+                </div>
+            </nav>
+            <div class="nav-scrim" data-nav-scrim></div>
+
+            <div class="header-actions">
+                <button type="button" class="icon-btn" data-open="search" aria-label="Search"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg></button>
+                <button type="button" class="icon-btn" data-open="wishlist" aria-label="Wishlist"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.4a4.3 4.3 0 0 1 7.5 2.4C19.5 15.4 12 20 12 20Z"/></svg><span class="badge" data-wishlist-count hidden>0</span></button>
+                <button type="button" class="icon-btn" data-open="bag" aria-label="Shopping bag"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg><span class="badge" data-bag-count hidden>0</span></button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <section class="page-hero" aria-labelledby="contact-title">
+            <div class="container">
+                <nav class="breadcrumbs" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li><span aria-current="page">Contact</span></li>
+                    </ol>
+                </nav>
+                <span class="eyebrow eyebrow--rule">Customer care</span>
+                <h1 id="contact-title">We'd love to <em>hear from you</em></h1>
+                <p class="lede">Questions about a formula, help building your routine, or simply a thought to share — write to us below, or find a quick answer in our FAQ.</p>
+            </div>
+        </section>
+
+        <section class="section contact" aria-labelledby="form-title">
+            <div class="container contact__inner">
+                <div class="contact__form-wrap">
+                    <h2 class="display-3" id="form-title">Send us a message</h2>
+                    <p class="contact__intro">All fields are required.</p>
+
+                    <form class="contact-form" data-form="contact" data-endpoint="/api/contact-submit" novalidate>
+                        <div class="contact-form__row">
+                            <div class="field">
+                                <label class="field__label" for="contact-name">Full name</label>
+                                <input class="field__input" id="contact-name" name="name" type="text" autocomplete="name" required minlength="2" maxlength="80" aria-describedby="contact-name-error">
+                                <p class="field__error" id="contact-name-error"></p>
+                            </div>
+                            <div class="field">
+                                <label class="field__label" for="contact-email">Email address</label>
+                                <input class="field__input" id="contact-email" name="email" type="email" autocomplete="email" required maxlength="120" aria-describedby="contact-email-error">
+                                <p class="field__error" id="contact-email-error"></p>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="field__label" for="contact-subject">Subject</label>
+                            <select class="field__input" id="contact-subject" name="subject" required aria-describedby="contact-subject-error">
+                                <option value="">Choose a topic</option>
+                                <option>Product advice</option>
+                                <option>Help with my routine</option>
+                                <option>Shipping &amp; returns</option>
+                                <option>Press &amp; partnerships</option>
+                                <option>Something else</option>
+                            </select>
+                            <p class="field__error" id="contact-subject-error"></p>
+                        </div>
+
+                        <div class="field">
+                            <label class="field__label" for="contact-message">Message</label>
+                            <textarea class="field__input" id="contact-message" name="message" rows="6" required minlength="20" maxlength="1000" aria-describedby="contact-message-hint contact-message-error"></textarea>
+                            <div class="field__meta">
+                                <p class="field__error" id="contact-message-error"></p>
+                                <p class="field__hint" id="contact-message-hint"><span data-char-count="contact-message">0 / 1000</span> characters, minimum 20</p>
+                            </div>
+                        </div>
+
+                        <!-- Honeypot: hidden from people, tempting to bots -->
+                        <div class="visually-hidden" aria-hidden="true">
+                            <label for="contact-company">Company</label>
+                            <input id="contact-company" name="company" type="text" tabindex="-1" autocomplete="off" data-honeypot>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary contact-form__submit">Send message</button>
+                        <div data-form-status></div>
+                    </form>
+                </div>
+
+                <div class="contact__aside">
+                    <div class="contact-card">
+                        <span class="eyebrow">Before you write</span>
+                        <h2>Quick help</h2>
+                        <ul class="contact-card__links" role="list">
+                            <li><a href="#faq">Frequently asked questions</a></li>
+                            <li><a href="#shipping">Shipping &amp; returns</a></li>
+                            <li><a href="index.html#rituals">Morning &amp; evening rituals</a></li>
+                            <li><a href="journal.html">Ingredient guides in the Journal</a></li>
+                        </ul>
+                    </div>
+                    <div class="contact-card contact-card--note">
+                        <span class="eyebrow">Secure checkout</span>
+                        <p>Payments are processed by Stripe on their secure checkout page — we never see or store your card details. For questions about an order, please include your order reference.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--cream faq" id="faq" aria-labelledby="faq-title">
+            <div class="container--narrow">
+                <div class="section-heading">
+                    <span class="eyebrow">FAQ</span>
+                    <h2 id="faq-title">Frequently asked <em>questions</em></h2>
+                </div>
+
+                <div class="accordion">
+                    <details>
+                        <summary>Can I place an order online?</summary>
+                        <div class="accordion__body">
+                            <p>Yes. Add products to your bag and choose <strong>Secure checkout</strong>. You'll enter your shipping details and pay on Stripe's secure checkout page, then return here to see your order confirmation and reference.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Which products suit sensitive-feeling skin?</summary>
+                        <div class="accordion__body">
+                            <p>Our <a href="product-detail.html?p=apricot-comfort-day-cream">Apricot Comfort Day Cream</a> and <a href="product-detail.html?p=gentle-foaming-cleanser">Gentle Foaming Cleanser</a> were designed with comfort in mind. Every skin is different, so we always recommend a patch test before first use — and speaking with a professional about any specific skin concern.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>How do I build a routine?</summary>
+                        <div class="accordion__body">
+                            <p>Start simple: cleanse, treat, moisturize. Our <a href="index.html#rituals">morning and evening rituals</a> show the order we recommend, and the <a href="journal.html">Journal</a> explains each step in more detail.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Where are my bag and wishlist saved?</summary>
+                        <div class="accordion__body">
+                            <p>They're stored in this browser, on this device only. Customer accounts aren't available yet, so your selection won't appear on other devices, and clearing your browser data will remove it.</p>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Are the descriptions medical advice?</summary>
+                        <div class="accordion__body">
+                            <p>No. Our products are cosmetics designed to care for the look and feel of skin, and our descriptions are written in cosmetic terms. For any skin condition, please consult a qualified professional.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="section shipping" id="shipping" aria-labelledby="shipping-title">
+            <div class="container--narrow">
+                <div class="section-heading">
+                    <span class="eyebrow">Delivery</span>
+                    <h2 id="shipping-title">Shipping &amp; <em>returns</em></h2>
+                    <p>How delivery charges are calculated at checkout.</p>
+                </div>
+                <dl class="policy-list">
+                    <div>
+                        <dt>Complimentary shipping</dt>
+                        <dd>Standard shipping is complimentary on orders over $50.</dd>
+                    </div>
+                    <div>
+                        <dt>Standard shipping</dt>
+                        <dd>A flat rate of $6.95 applies to orders under $50. This is the estimate shown in your bag.</dd>
+                    </div>
+                    <div>
+                        <dt>Taxes</dt>
+                        <dd>Any applicable taxes are shown at checkout before you pay.</dd>
+                    </div>
+                    <div>
+                        <dt>Returns</dt>
+                        <dd>Our full returns policy is being finalised. In the meantime, please <a href="#form-title">contact us</a> about any order and quote your order reference.</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">GLOWW<span class="logo__sub">Botanical skincare</span></a>
+                <p>Botanical skincare made for the quiet moments that are yours alone. Considered formulas, honest words, beautiful rituals.</p>
+            </div>
+            <nav class="footer-column" aria-labelledby="footer-shop">
+                <h2 id="footer-shop">Shop</h2>
+                <ul role="list">
+                    <li><a href="Product.html">All products</a></li>
+                    <li><a href="Product.html?category=serums">Serums</a></li>
+                    <li><a href="Product.html?category=moisturizers">Moisturizers</a></li>
+                    <li><a href="Product.html?category=body">Body &amp; sun</a></li>
+                    <li><a href="Product.html?category=sets">Gift sets</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-column" aria-labelledby="footer-explore">
+                <h2 id="footer-explore">Explore</h2>
+                <ul role="list">
+                    <li><a href="about.html">Our story</a></li>
+                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="index.html#rituals">Daily rituals</a></li>
+                    <li><a href="Product.html?benefit=hydration">Shop by skin need</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-column" aria-labelledby="footer-care">
+                <h2 id="footer-care">Customer care</h2>
+                <ul role="list">
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="contact.html#faq">FAQ</a></li>
+                    <li><a href="contact.html#shipping">Shipping &amp; returns</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span data-year>2026</span> GLOWW. All rights reserved.</p>
+            <p>Prices in USD · Secure checkout by Stripe</p>
+        </div>
+    </footer>
+
+    <script src="js/products.js" defer></script>
+    <script src="js/store.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/drawers.js" defer></script>
+    <script src="js/forms.js" defer></script>
+</body>
+
+</html>

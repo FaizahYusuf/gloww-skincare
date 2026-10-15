@@ -1,0 +1,332 @@
+/* =========================================================
+   Shared navigation — announcement bar, sticky header,
+   desktop menu and the mobile off-canvas menu.
+   Used by every page (loaded after base.css).
+========================================================= */
+
+/* ---------- Announcement bar ---------- */
+
+.announcement {
+    padding: 0.6rem var(--gutter);
+    background: var(--color-forest);
+    color: var(--color-cream);
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.announcement a {
+    color: inherit;
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* Solid background: a backdrop-filter here would trap the fixed mobile menu inside the header */
+    background: var(--color-ivory);
+    border-bottom: 1px solid var(--color-line);
+    transition: box-shadow var(--duration) var(--ease), background-color var(--duration) var(--ease);
+}
+
+.site-header.is-scrolled {
+    box-shadow: 0 8px 30px rgba(44, 38, 30, 0.07);
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    min-height: var(--header-height);
+}
+
+.navbar .logo {
+    justify-self: center;
+    font-size: 1.45rem;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.15rem;
+}
+
+/* ---------- Hamburger ---------- */
+
+.nav-toggle {
+    justify-self: start;
+    display: inline-grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-left: -0.6rem;
+}
+
+.nav-toggle__bars,
+.nav-toggle__bars::before,
+.nav-toggle__bars::after {
+    display: block;
+    width: 22px;
+    height: 1.4px;
+    background: var(--color-charcoal);
+    transition: transform var(--duration) var(--ease), opacity var(--duration-fast) var(--ease);
+}
+
+.nav-toggle__bars {
+    position: relative;
+}
+
+.nav-toggle__bars::before,
+.nav-toggle__bars::after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle__bars::before {
+    top: -7px;
+}
+
+.nav-toggle__bars::after {
+    top: 7px;
+}
+
+/* ---------- Mobile / tablet menu (off-canvas) ---------- */
+
+.primary-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 120;
+    display: flex;
+    flex-direction: column;
+    width: min(88vw, 400px);
+    padding: 1.25rem 1.75rem 2rem;
+    background: var(--color-ivory);
+    box-shadow: var(--shadow-lift);
+    overflow-y: auto;
+    transform: translateX(-102%);
+    visibility: hidden;
+    transition:
+        transform 0.5s var(--ease-out),
+        visibility 0s linear 0.5s;
+}
+
+.nav-open .primary-nav {
+    transform: translateX(0);
+    visibility: visible;
+    transition:
+        transform 0.5s var(--ease-out),
+        visibility 0s;
+}
+
+.primary-nav__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.primary-nav__head .logo {
+    font-size: 1.3rem;
+}
+
+.primary-nav__list {
+    display: grid;
+    list-style: none;
+}
+
+.primary-nav__list a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-line);
+    color: var(--color-charcoal);
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    line-height: 1.1;
+    text-decoration: none;
+    transition: color var(--duration-fast) var(--ease), padding var(--duration) var(--ease);
+}
+
+.primary-nav__list a:hover {
+    color: var(--color-forest);
+    padding-left: 0.35rem;
+}
+
+.primary-nav__list a[aria-current="page"] {
+    color: var(--color-forest);
+    font-style: italic;
+}
+
+.primary-nav__extra {
+    margin-top: 2.25rem;
+}
+
+.primary-nav__extra h2 {
+    margin-bottom: 1rem;
+    color: var(--color-muted);
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+.primary-nav__extra ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.primary-nav__extra a {
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+    border: 1px solid var(--color-line-strong);
+    border-radius: var(--radius-pill);
+    font-size: var(--text-sm);
+    text-decoration: none;
+    transition: background-color var(--duration-fast) var(--ease), border-color var(--duration-fast) var(--ease);
+}
+
+.primary-nav__extra a:hover {
+    border-color: var(--color-forest);
+    background: var(--color-sage-soft);
+}
+
+/* Staggered entrance for menu items */
+.nav-open .primary-nav__list li {
+    animation: fade-up 0.5s var(--ease-out) both;
+}
+
+.nav-open .primary-nav__list li:nth-child(2) { animation-delay: 0.04s; }
+.nav-open .primary-nav__list li:nth-child(3) { animation-delay: 0.08s; }
+.nav-open .primary-nav__list li:nth-child(4) { animation-delay: 0.12s; }
+.nav-open .primary-nav__list li:nth-child(5) { animation-delay: 0.16s; }
+
+.nav-scrim {
+    position: fixed;
+    inset: 0;
+    z-index: 110;
+    background: rgba(24, 30, 26, 0.42);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--duration) var(--ease), visibility 0s linear var(--duration);
+}
+
+.nav-open .nav-scrim {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity var(--duration) var(--ease);
+}
+
+/* ---------- Desktop menu ---------- */
+
+@media (min-width: 1024px) {
+    .navbar {
+        grid-template-columns: auto 1fr auto;
+        gap: 2.5rem;
+    }
+
+    .navbar .logo {
+        justify-self: start;
+        font-size: 1.6rem;
+    }
+
+    .nav-toggle,
+    .primary-nav__head,
+    .primary-nav__extra,
+    .nav-scrim {
+        display: none;
+    }
+
+    .primary-nav {
+        position: static;
+        width: auto;
+        padding: 0;
+        background: none;
+        box-shadow: none;
+        overflow: visible;
+        transform: none;
+        visibility: visible;
+        transition: none;
+    }
+
+    .primary-nav__list {
+        display: flex;
+        justify-content: center;
+        gap: clamp(1.5rem, 3vw, 2.75rem);
+    }
+
+    .primary-nav__list li {
+        animation: none !important;
+    }
+
+    .primary-nav__list a {
+        position: relative;
+        padding: 0.4rem 0;
+        border: 0;
+        font-family: var(--font-body);
+        font-size: 0.74rem;
+        font-weight: 500;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+    }
+
+    .primary-nav__list a:hover {
+        padding-left: 0;
+    }
+
+    /* Underline grows from the left — kept from the original nav hover */
+    .primary-nav__list a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: currentColor;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform var(--duration) var(--ease);
+    }
+
+    .primary-nav__list a:hover::after,
+    .primary-nav__list a[aria-current="page"]::after {
+        transform: scaleX(1);
+    }
+
+    .primary-nav__list a[aria-current="page"] {
+        font-style: normal;
+    }
+}
+
+@media (max-width: 420px) {
+    .navbar .logo {
+        font-size: 1.15rem;
+        letter-spacing: 0.24em;
+    }
+
+    .navbar .logo__sub {
+        display: none;
+    }
+
+    .header-actions .icon-btn {
+        width: 2.4rem;
+    }
+
+    .header-actions [data-open="wishlist"] {
+        display: none;
+    }
+}
+
+.primary-nav__wishlist {
+    margin-top: 1.75rem;
+}

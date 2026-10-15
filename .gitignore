@@ -1,0 +1,15 @@
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/
+~$*
+
+# Local secrets & Netlify CLI
+.env
+.env.*
+!.env.example
+.netlify/
+
+# Kept locally, not published
+CLAUDE.md
+Documentation/
