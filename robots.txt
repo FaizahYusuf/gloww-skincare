@@ -1,9 +1,9 @@
 # GLOWW — robots.txt
-# Before launch: replace https://www.example.com with the live domain.
+# Production: https://gloww-skincare-6bb719.netlify.app
 
 User-agent: *
 Allow: /
 Disallow: /tools/
 Disallow: /Documentation/
 
-Sitemap: https://www.example.com/sitemap.xml
+Sitemap: https://gloww-skincare-6bb719.netlify.app/sitemap.xml
